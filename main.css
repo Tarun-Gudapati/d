@@ -1,0 +1,57 @@
+:root {
+  --green: #013b01;
+  --yellow: rgb(235, 213, 8);
+  --red: rgb(160, 8, 8);
+  --white: white;
+  --black: rgb(33, 31, 31);
+}
+ul {
+  font-family: Arial, Helvetica, sans-serif;
+}
+li {
+  list-style: circle;
+}
+.list {
+  list-style: square;
+}
+#msg {
+  font-family: monospace;
+}
+
+/* body {
+  text-align: center;
+} */
+p,
+ul {
+  font-weight: bolder;
+}
+
+.green-theme {
+  --fontcolor: var(--yellow);
+  --bg: var(--green);
+  --btncolor: var(--red);
+  --btnfontcolor: var(--white);
+}
+.red-theme {
+  --fontcolor: var(--white);
+  --bg: var(--red);
+  --btncolor: var(--green);
+  --btnfontcolor: var(--yellow);
+}
+body {
+  color: var(--fontcolor);
+  background: var(--bg);
+  font-family: Arial, Helvetica, sans-serif;
+}
+.btn {
+  position: absolute;
+  top: 20px;
+  left: 250px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: none;
+
+  color: var(--btnfontcolor);
+  background-color: var(--btncolor);
+}
